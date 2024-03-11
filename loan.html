@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <!-- Site Metas -->
+    <title> Earth Bank - Loaner </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Loaner" />
+    <meta property="og:description"        content="Efficient Accounting" />
+
+    <!-- Link to favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="">
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!--owl slider stylesheet -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- font awesome style -->
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+    <!-- Primary CSS -->
+    <link href="assets/style/styles.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+
+    <div class="hero_area">
+      <div class="hero_bg_box">
+
+        <!-- Background Image -->
+        <img src="images/bankt.gif" alt="">
+      </div>
+      <header class="header_section">
+        <div class="container">
+        </div>
+      </header>
+      <br>
+      <br>
+      <!-- Inputs -->
+      <div class="calculator">
+        <label for="loanAmount">Loan Amount:</label>
+        <input type="number" id="loanAmount" placeholder="Enter loan amount">
+        <br>
+        <label for="interestRate">Interest Rate (%):</label>
+        <input type="number" id="interestRate" placeholder="Enter interest rate">
+        <br>
+        <label for="loanTerm">Loan Term (months):</label>
+        <input type="number" id="loanTerm" placeholder="Enter loan term">
+        <br>
+        <button onclick="calculateLoan()">Calculate</button>
+        <br>
+
+        <!-- Output of calculated loan -->
+        <h6>Results:</h6>
+        <!-- Monthly Payment -->
+        <p id="monthlyPayment">Monthly Payment: &#x20A6;0.00</p>
+        <!-- Total number of payments to be made -->
+        <p id="totalRepayment">Total Repayment: &#x20A6;0.00</p>
+      </div>
+  
+  
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script> Earth Bank
+      </p>
+    </footer>
+
+
+    <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+    </script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+
+    <!-- Script for Loan Calculator -->
+    <script src="assets/scripts/script.js"></script>
+
+  </body>
+
+</html>
+
